@@ -2,10 +2,25 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 body {
+  background-color: lightgray;
+}
+
+article {
   margin: 20px;
-  box-shadow: 3px;
-  border-radius: 20%;
+  border-radius: 6%;
+  box-shadow: 20px;
+  background-color: whitesmoke;
+}
+
+#logo {
+  border-radius: 6%;
+  margin: 2%;
+}
+
+.text {
+  margin: 2%;
 }
