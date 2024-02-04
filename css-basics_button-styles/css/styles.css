@@ -31,6 +31,10 @@ button {
 
 .button1 {
   /*Style me! Change my border, set a border radius or what you want to try out. :) */
+  border-color: goldenrod;
+  border-radius: 30%;
+  border-width: 5px;
+  opacity: 0.4;
 }
 
 .button2 {
