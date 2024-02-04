@@ -10,6 +10,7 @@ body {
 }
 
 article {
+  padding: 2%;
   margin: 20px;
   border-radius: 6%;
   box-shadow: 20px;
@@ -18,13 +19,19 @@ article {
 
 #logo {
   border-radius: 6%;
-  margin: 2%;
 }
 
 .text {
-  margin: 2%;
+  margin: 0.5rem;
 }
 
 .account {
   opacity: 0.4;
+}
+
+button {
+  border: 0;
+  background-color: white;
+  color: lightskyblue;
+  border-radius: 50%;
 }
