@@ -45,6 +45,10 @@ button {
 
 .button3 {
   /*Style me! You can test out changing the font, or font size, ...*/
+  font-size: xx-large;
+  font-style: oblique;
+  font-weight: 600;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .button4 {
