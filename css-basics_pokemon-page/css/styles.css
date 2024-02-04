@@ -33,16 +33,14 @@ body {
 - Add a padding of 10px
 - Center the text of the heading
 */
-h1 {
+.title {
   background-color: white;
   margin-top: 0;
   padding: 10px;
   text-align: center;
 }
 
-.title {
-  /* your solution */
-}
+\
 
 /* ------- Sections ------- */
 
