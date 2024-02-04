@@ -40,6 +40,13 @@ body {
   text-align: center;
 }
 
+section {
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  border-left: solid orange 5px;
+}
+
 \
 
 /* ------- Sections ------- */
@@ -52,11 +59,10 @@ body {
 - Bonus:  The left border of the second section which contains a list of favourite Pokémon should have the color "gold". Hint: You may need a second CSS rule.
 */
 
-section {
-  /* your solution */
-}
+
 
 /* ------- Headings Part 2 ------- */
+
 
 /* Task 6: The headings of our sections somehow look boring. Therefore, we want to change this:
 
