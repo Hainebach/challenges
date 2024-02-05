@@ -1,3 +1,9 @@
+:root {
+  --color-black-light: rgb(48 48 48);
+  --color-primary: rgb(130, 54, 255);
+  --color-white: rgb(255 255 255);
+}
+
 *,
 *::before,
 *::after {
@@ -11,7 +17,7 @@ body {
 }
 
 header {
-  background: rgb(48 48 48 / 100%);
+  background: var(--color-black-light);
 }
 
 h1 {
