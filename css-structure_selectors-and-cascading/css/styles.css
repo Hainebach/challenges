@@ -76,7 +76,7 @@ nav > ul > li > a {
 }
 
 /* 5. These styles should apply to the main navigation link corresponding to the current page */
-FIX_ME {
+a.current {
   outline: 2px dashed red;
   color: #22e781;
 }
