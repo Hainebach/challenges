@@ -45,10 +45,9 @@ main {
 .box--top-center {
   background-color: #85c1e9;
   position: absolute;
-  left: 0px;
-  right: 0px;
-  margin-left: auto;
-  margin-right: auto;
+  left: 50%;
+  right: 0%;
+  transform: translate(-50%, 0);
 }
 
 .box--top-right {
