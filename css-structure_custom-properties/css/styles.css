@@ -68,7 +68,7 @@ figure {
 }
 
 figcaption {
-  color: rgb(255 255 255);
+  color: var(--color-white);
 }
 
 nav {
@@ -83,7 +83,7 @@ a {
   padding: 8px;
   border-radius: 4px;
   background-color: var(--color-primary);
-  color: #fff;
+  color: var(--color-white);
 }
 
 a:hover,
@@ -94,7 +94,7 @@ a:focus-visible {
 
 mark {
   background-color: var(--color-primary);
-  color: #ffffff;
+  color: var(--color-white);
   border-radius: 4px;
   letter-spacing: 0.025em;
 }
