@@ -67,6 +67,9 @@ main {
 
 .box--bottom-left {
   background-color: #2874a6;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
 }
 
 .box--bottom-center {
