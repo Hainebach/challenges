@@ -69,7 +69,7 @@ a[target] {
 }
 
 /* 4. These styles should apply to all links in the main navigation */
-FIX_ME {
+nav > ul > li > a {
   outline: 2px dashed red;
   color: #ffffff;
   text-decoration: none;
