@@ -35,7 +35,7 @@ h2 {
 }
 
 strong {
-  color: #8236ff;
+  color: var(--color-primary);
 }
 
 section {
@@ -63,7 +63,7 @@ figure {
   gap: 10px;
   margin: 0;
   padding: 10px;
-  background-color: #8236ffff;
+  background-color: var(--color-primary);
   border-radius: 4px;
 }
 
@@ -82,7 +82,7 @@ a {
   font-size: smaller;
   padding: 8px;
   border-radius: 4px;
-  background-color: hsl(263, 100%, 61%);
+  background-color: var(--color-primary);
   color: #fff;
 }
 
@@ -93,13 +93,13 @@ a:focus-visible {
 }
 
 mark {
-  background-color: rgb(130, 54, 255);
+  background-color: var(--color-primary);
   color: #ffffff;
   border-radius: 4px;
   letter-spacing: 0.025em;
 }
 
 ::selection {
-  background-color: #303030;
-  color: #8236ff;
+  background-color: var(--color-black-light);
+  color: var(--color-primary);
 }
