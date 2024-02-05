@@ -74,6 +74,10 @@ main {
 
 .box--bottom-center {
   background-color: #21618c;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .box--bottom-right {
