@@ -43,11 +43,10 @@ ul {
   color: var(--white);
   padding: 5px 14px;
   border-radius: 5px;
-  display: flex;
-  flex-direction: column;
 }
 
 .navigation__menu {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
