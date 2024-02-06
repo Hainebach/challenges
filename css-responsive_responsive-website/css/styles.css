@@ -260,5 +260,11 @@ width, etc. */
 
 /* Media Query Desktop */
 /* --- */
-/* Replace this comment with your media query. */
+@media (min-width: 1200px) {
+  .--forest {
+    width: 100%;
+  }
+  .card-section {
+    align-items: center;
+}
 /* --- */
