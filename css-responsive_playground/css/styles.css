@@ -121,3 +121,11 @@ h1 {
     height: 50px;
   }
 }
+@media (prefers-color-scheme: dark) {
+  .box--four {
+    background-color: rgb(234, 44, 44);
+
+    width: 100px;
+    height: 100px;
+  }
+}
