@@ -1,4 +1,8 @@
 let mealCost = 20;
 const tipPrecentage = 1.12;
 
-console.log(mealCost * tipPrecentage);
+let totalCost = mealCost * tipPrecentage;
+
+totalCost = Math.round(totalCost);
+
+console.log(`the total cost of your meal is: ${totalCost}`);
