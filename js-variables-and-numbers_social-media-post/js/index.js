@@ -12,9 +12,10 @@ console.clear();
 // --v-- write your code here --v--
 const title = "title";
 const text = "text";
-const numberOfLikes = 2;
+let numberOfLikes = 4;
 const userName = "Someone";
 const isReported = "true";
+numberOfLikes++;
 
 console.log("title: ", title);
 console.log("text: ", text);
@@ -30,7 +31,7 @@ console.log("reported: ", isReported);
 
 // --v-- write your code here --v--
 
-let addedLikes = 1;
-console.log("updated number of likes: ", numberOfLikes + addedLikes);
+/*let addedLikes = 1;
+console.log("updated number of likes: ", numberOfLikes + addedLikes); */
 
 // --^-- write your code here --^--
