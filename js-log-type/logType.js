@@ -1,5 +1,5 @@
 let data;
-data = null;
+data = "this is a string";
 
 switch (typeof data) {
   case "undefined":
@@ -29,6 +29,9 @@ switch (typeof data) {
     } else {
       console.log("object!");
     }
+    break;
+  case "string":
+    console.log("string!");
     break;
 
   default:
