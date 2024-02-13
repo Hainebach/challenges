@@ -10,6 +10,18 @@ console.clear();
 */
 
 // --v-- write your code here --v--
+const title = "title";
+const text = "text";
+let numberOfLikes = 4;
+const userName = "Someone";
+const isReported = "true";
+numberOfLikes++;
+
+console.log("title: ", title);
+console.log("text: ", text);
+console.log("number of like: ", numberOfLikes);
+console.log("user name: ", userName);
+console.log("reported: ", isReported);
 
 // --^-- write your code here --^--
 
@@ -18,5 +30,8 @@ console.clear();
 */
 
 // --v-- write your code here --v--
+
+/*let addedLikes = 1;
+console.log("updated number of likes: ", numberOfLikes + addedLikes); */
 
 // --^-- write your code here --^--
