@@ -10,6 +10,43 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <section></section>
+    <section>
+      <form action="submit">
+        <label for="personalInformation"
+          >We want to get to know you! Please wnter your personal
+          information</label
+        >
+        <fieldset id="personalInformation" name="personalInformation">
+          <legend>Personal information</legend>
+          <label for="firstName">Firse Name:</label>
+          <input type="text" id="firstName" name="firstName" />
+          <label for="LastName">Last Name:</label>
+          <input type="text" id="LastName" name="LastName" />
+          <label for="birthday">Your Birthday</label>
+          <input type="date" id="birthday" name="birthday" />
+        </fieldset>
+
+        <label for="furtherInformation"
+          >Can you tell us a little bit more? We want to annoy you with unwanted
+          ads</label
+        >
+        <fieldset id="furtherInformation" name="furtherInformation">
+          <legend>Further Information</legend>
+          <label for="color">Favorite Color:</label>
+          <input type="color" id="color" name="color" value="#E5430F" />
+          <label for="favoritePet">What's your favorite pet?</label>
+          <select name="favoritePet" id="favoritePet">
+            <option id="favoritePet1" name="favoritePet1">Camel</option>
+            <option id="favoritePet2" name="favoritePet2">Pig</option>
+            <option id="favoritePet3" name="favoritePet3">Sloth</option>
+            <option id="favoritePet4" name="favoritePet4">Quala</option>
+            <option id="favoritePet5" name="favoritePet5">
+              Elephant shrew
+            </option>
+          </select>
+        </fieldset>
+        <button>Submit</button>
+      </form>
+    </section>
   </body>
 </html>
