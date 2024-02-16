@@ -14,4 +14,5 @@ form.addEventListener("submit", (evt) => {
   console.log("badness sum:", badnessSum);
 
   form.reset();
+  evt.target["firstName"].focus();
 });
