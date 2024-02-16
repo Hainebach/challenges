@@ -25,9 +25,13 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   // --v-- write your code here --v--
-  const formData = new FormData(evt.target);
+  const formData = new FormData(eventt.target);
   const userData = Object.fromEntries(formData);
-  Boolean checked = 
+  //write a bolean tht checks if box is checked or not
+  Boolean checked = event.target.tos.value
+  if(checked) {
+    console.log(showSuccess(event));
+  }
 
   // hideSuccess();
 
