@@ -18,25 +18,30 @@ function showSuccess() {
 }
 
 function hideSuccess() {
-  success.removeAttribute("hidden", "");
+  success.setAttribute("hidden", "");
 }
+
+hideSuccess();
+hideTosError();
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  // --v-- write your code here --v--
-  const formData = new FormData(eventt.target);
+  const formData = new FormData(event.target);
   const userData = Object.fromEntries(formData);
-  //write a bolean tht checks if box is checked or not
-  Boolean checked = event.target.tos.value
-  if(checked) {
-    console.log(showSuccess(event));
-  }
+  //write a boolean that checks if box is checked or not
+  const checkedBox = tosCheckbox.checked;
 
-  // hideSuccess();
+  if (checkedBox) {
+    hideTosError();
+    alert("form submitted");
+    showSuccess();
+  } else {
+    showTosError();
+    alert("form was not submitted");
+  }
 
   // --^-- write your code here --^--
 
   // eslint-disable-next-line no-alert
-  alert("Form submitted");
 });
