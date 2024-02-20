@@ -46,4 +46,16 @@ navElement.append(ul);
 
 // --v-- write/change code here --v--
 
+for (key in nav) {
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+
+  a.setAttribute("href", nav[key].text);
+  a.setAttribute("text", nav[key].text);
+  a.textContent = key;
+  ul.appendChild(li);
+  li.appendChild(a);
+  console.log(li);
+}
+
 // --^-- write/change code here --^--
