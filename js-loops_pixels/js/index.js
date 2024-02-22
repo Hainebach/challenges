@@ -124,6 +124,7 @@ const pixelValues = [
 
 const canvas = document.querySelector('[data-js="canvas"]');
 
+
 for (const pixelValue of pixelValues) {
   for (const pixel of pixelValue) {
     const pixelContainer = document.createElement("div");
