@@ -35,31 +35,44 @@ const recipes = [
  1: `map` exercises
 */
 
-const onlyTitles = null; // ['Crepes', ...]
+const onlyTitles = recipes.map((element) => {
+  return element.title;
+}); // ['Crepes', ...]
+// console.log(onlyTitles);
 
-const titlesWithDuration = null; // ['Crepes (60min)', ...]
+const titlesWithDuration = recipes.map((element) => {
+  return `${element.title} (${element.duration})`;
+}); // ['Crepes (60min)', ...]
+// console.log(titlesWithDuration);
 
-const timePerServing = null; // [20, 10, 432, 12]
+const timePerServing = recipes.map((element) => {
+  return element.duration / element.servings;
+}); // [20, 10, 432, 12]
+// console.log(timePerServing);
 
 // EXTRA:
 
-// HINT: use first map() and then Array.prototype.join() with "method chaining" like so:
-// myArray.map(...).join(', ');
-
-const allTitlesInOneString = null; // 'Crepes, Scrambled Eggs, ...'
-
-// For more information how to join an array,
-// see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join#joining_an_array_four_different_ways
-
+const allTitlesInOneString = onlyTitles.join(", ");
+// console.log(allTitlesInOneString);
 /*
  2: `filter` exercises
 */
 
-const recipesThatOnlyTake60minutesOrLess = null;
+const recipesThatOnlyTake60minutesOrLess = recipes.filter((element) => {
+  return element.duration <= 60;
+});
 
-const allRecipesWithMoreThan2Servings = null;
+// console.log("less than 60 min: ", recipesThatOnlyTake60minutesOrLess);
 
-const allRecipesWithTitlesLongerThan12Characters = null;
+const allRecipesWithMoreThan2Servings = recipes.filter((element) => {
+  return element.servings > 2;
+});
+// console.log(allRecipesWithMoreThan2Servings);
+
+const allRecipesWithTitlesLongerThan12Characters = recipes.filter(
+  (element) => element.title.length > 12
+);
+console.log("long title recipes: ", allRecipesWithTitlesLongerThan12Characters);
 
 export {
   onlyTitles,
