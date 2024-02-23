@@ -1,4 +1,6 @@
 // Store the cards in a global state
+import { Header } from "./components/Header/Header.js";
+
 const cards = [
   {
     question:
@@ -23,15 +25,7 @@ const cards = [
   },
 ];
 
-function Header() {
-  const header = document.createElement("header");
-  header.classList.add("header");
-  header.innerHTML = /* html */ `
-	  <h1 class="header__title">Quiz-App</h1>
-	`;
-
-  return header;
-}
+const header = Header();
 
 function handleFormSubmit(event) {
   event.preventDefault();
