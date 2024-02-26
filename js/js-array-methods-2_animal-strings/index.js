@@ -48,7 +48,9 @@ console.log("indexOfGiraffe: ", indexOfGiraffe);
 // Hint: There is no need to upper-/lowercase the strings before sorting them.
 // Hint: sort() mutates the original array, which is bad.
 // -> Use animals.slice().sort(...) to make a copy.
-const animalsSortedAlphabetically = animalStrings.slice().sort((a, b) => a - b);
+const animalsSortedAlphabetically = animalStrings
+  .slice()
+  .sort((a, b) => a.localeCompare(b));
 console.log("animalsSortedAlphabetically: ", animalsSortedAlphabetically);
 
 // Hint: Guess what? There is a string method called `endsWith()`.
@@ -68,7 +70,7 @@ console.log(
 // Option 2: Use `map()` to create an array with the length values of all strings,
 // 				then sum them up with `reduce()` (keyword: method chaining)
 const sumOfAllAnimalCharacters = animalStrings.reduce(
-  (a, b) => a + b.length,
+  (acc, animal) => acc + animal.length,
   0
 );
 console.log("the sum of all characters is: ", sumOfAllAnimalCharacters);
