@@ -115,8 +115,9 @@ console.log(
   "animals sorted by weigth: ",
   animalsSortedByWeightStartingWithLowest
 );
-const animalsSortedByWeightReversed =
-  animalsSortedByWeightStartingWithLowest.reverse();
+const animalsSortedByWeightReversed = animalsSortedByWeightStartingWithLowest
+  .slice()
+  .reverse();
 console.log(
   "animal sorted by weight heavy to light: ",
   animalsSortedByWeightStartingWithLowest
@@ -131,8 +132,8 @@ const animalWithWeightMoreThanFivehundredExists = animals.some(
 // );
 
 // Hint: Filter for Europe first, then check every animal for its weight.
-const allAnimalsInEuropeWeighLessThanOnehundred = animals.filter(
-  (a) => a.continents.includes("Europe") && a.weight < 100
+const allAnimalsInEuropeWeighLessThanOnehundred = animals.filter((a) =>
+  a.continents.includes("Europe").reduce((a) => a.weight < 100)
 );
 
 // console.log(
