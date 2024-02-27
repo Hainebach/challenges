@@ -103,10 +103,12 @@ console.log(
 // Hint: sort() mutates the original array, which is bad.
 // -> Use animals.slice().sort(...) to make a copy (and the tests work).
 
-const animalsSortedAlphabetically = animals.sort((a, b) => a.name - b.name);
-console.log("animals sorted alphabetically: ", animalsSortedAlphabetically);
-
-console.log(animalsSortedAlphabetically);
+const animalsSortedAlphabetically = animals.sort((a, b) => {
+  if (a.name < b.name) return -1;
+  if (a.name > b.name) return 1;
+  return 0;
+});
+console.log("Animals sorted alphabetically: ", animalsSortedAlphabetically);
 
 const animalsSortedByWeightStartingWithLowest = animals.sort(
   (a, b) => a.weight - b.weight
@@ -132,9 +134,9 @@ const animalWithWeightMoreThanFivehundredExists = animals.some(
 // );
 
 // Hint: Filter for Europe first, then check every animal for its weight.
-const allAnimalsInEuropeWeighLessThanOnehundred = animals.filter((a) =>
-  a.continents.includes("Europe").every((a) => a.weight < 100)
-);
+const allAnimalsInEuropeWeighLessThanOnehundred = animals
+  .filter((a) => a.continents.includes("Europe"))
+  .every((a) => a.weight < 100);
 
 // console.log(
 //   "animals in Europe that weigh less than 100: ",
