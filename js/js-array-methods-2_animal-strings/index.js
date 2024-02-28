@@ -21,15 +21,24 @@ const animalStrings = [
   "rhino",
 ];
 
-const hippoExists = null;
+const hippoExists = animalStrings.includes("hippo");
+console.log("hippo exist: ", hippoExists);
 
 // Hint: You can pass the starting index as second parameter.
-const catStartingFromIndexFiveExists = null;
+const catStartingFromIndexFiveExists = animalStrings.includes("cat", 5);
+console.log("Cat starting from index 5: ", catStartingFromIndexFiveExists);
 
 // Hint: Besides the array method, check out the string method `startsWith()`.
-const firstAnimalStartingWithLetterP = null;
+const firstAnimalStartingWithLetterP = animalStrings.find((s) =>
+  s.startsWith("p")
+);
+console.log(
+  "the first animal starting with P: ",
+  firstAnimalStartingWithLetterP
+);
 
-const indexOfGiraffe = null;
+const indexOfGiraffe = animalStrings.indexOf("giraffe");
+console.log("indexOfGiraffe: ", indexOfGiraffe);
 
 // Note:
 // - Sorting strings is slightly more complicated than sorting numbers.
@@ -39,18 +48,35 @@ const indexOfGiraffe = null;
 // Hint: There is no need to upper-/lowercase the strings before sorting them.
 // Hint: sort() mutates the original array, which is bad.
 // -> Use animals.slice().sort(...) to make a copy.
-const animalsSortedAlphabetically = null;
+const animalsSortedAlphabetically = animalStrings
+  .slice()
+  .sort((a, b) => a.localeCompare(b));
+console.log("animalsSortedAlphabetically: ", animalsSortedAlphabetically);
 
 // Hint: Guess what? There is a string method called `endsWith()`.
-const anyAnimalEndsWithLetterZ = null;
+const anyAnimalEndsWithLetterZ = animalStrings.some((a) => a.endsWith("z"));
+console.log("any animal ends with z? ", anyAnimalEndsWithLetterZ);
 
-const everyAnimalHasMoreThanTwoLetters = null;
+const everyAnimalHasMoreThanTwoLetters = animalStrings.every(
+  (a) => a.length > 2
+);
+console.log(
+  "are all animal names larger than two letter? ",
+  everyAnimalHasMoreThanTwoLetters
+);
 
 // Hint: There are several ways to go here. Let's focus on two options:
 // Option 1: Concatenate all characters with `reduce()` and check for the `length` property of the result.
 // Option 2: Use `map()` to create an array with the length values of all strings,
 // 				then sum them up with `reduce()` (keyword: method chaining)
-const sumOfAllAnimalCharacters = null;
+const sumOfAllAnimalCharacters = animalStrings.reduce(
+  (acc, animal) => acc + animal.length,
+  0
+);
+console.log("the sum of all characters is: ", sumOfAllAnimalCharacters);
+
+const sumOfAllAnimalCharacters2 = animalStrings.map((a) => a.length);
+console.log(sumOfAllAnimalCharacters2.reduce((a, b) => a + b));
 
 export {
   hippoExists,
