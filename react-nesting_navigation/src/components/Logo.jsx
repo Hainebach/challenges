@@ -1,4 +1,4 @@
-import logo from "/Users/yoavhainebach/spiced/spiced-bootcamp/challenges/react-nesting_navigation/src/assets/logo.jpg";
+import logo from "../assets/logo.jpg";
 
 export default function Logo() {
   return (
