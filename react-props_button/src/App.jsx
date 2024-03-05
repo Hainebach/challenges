@@ -4,11 +4,30 @@ import Button from "./Button.jsx";
 export default function App() {
   return (
     <>
-      <Button color={"blue"} text={"push me"} />
+      <Button
+        onClick={() => {
+          console.log("button 1 clicked");
+        }}
+        text={"push me"}
+        color={"green"}
+      />
       <br />
-      <Button color={"red"} text={"you can't push me"} disabled={true} />
+      <Button
+        onClick={() => {
+          console.log("button 2 clicked");
+        }}
+        color={"red"}
+        disabled={true}
+        text={"you can't push me"}
+      />
       <br />
-      <Button color={"green"} text={"push me"} />
+      <Button
+        onClick={() => {
+          console.log("button 3 clicked");
+        }}
+        color={"green"}
+        text={"push me"}
+      />
     </>
   );
 }

@@ -1,6 +1,10 @@
-export default function Button({ color, disabled, text }) {
+export default function Button({ color, disabled, text, onClick }) {
   return (
-    <button style={{ color: color }} disabled={disabled}>
+    <button
+      onClick={onClick}
+      style={{ backgroundColor: color, color: "white" }}
+      disabled={disabled}
+    >
       {text}
     </button>
   );
