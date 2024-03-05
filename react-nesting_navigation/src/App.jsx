@@ -1,15 +1,13 @@
 import "./App.css";
+import Header from "./components/Header.jsx";
 
 import avatar from "./assets/avatar.jpg";
-import logo from "./assets/logo.jpg";
 
 export default function App() {
   return (
     <>
-      <header className="header">
-        <a href="#">
-          <img className="round-image" src={logo} alt="logo" />
-        </a>
+      <Header>
+        {" "}
         <nav>
           <a className="navigation__link" href="#home">
             Home
@@ -28,7 +26,8 @@ export default function App() {
         >
           <img className="round-image" src={avatar} alt="avatar" />
         </button>
-      </header>
+      </Header>
+
       <main>content goes here…</main>
     </>
   );
