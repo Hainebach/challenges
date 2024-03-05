@@ -1,5 +1,6 @@
 import "./App.css";
+import Sum from "./Sum.jsx";
 
 export default function App() {
-  return <h1>Replace me with your component!</h1>;
+  return <Sum valueA={16} valueB={8} />;
 }
