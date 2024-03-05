@@ -8,8 +8,8 @@ export default function App() {
         onClick={() => {
           console.log("button 1 clicked");
         }}
-        text={"push me"}
-        color={"green"}
+        text="push me"
+        color="green"
       />
       <br />
       <Button
