@@ -1,5 +1,14 @@
 import "./App.css";
+import Button from "./Button.jsx";
 
 export default function App() {
-  return <h1>Replace me with your component!</h1>;
+  return (
+    <>
+      <Button color={"blue"} text={"push me"} />
+      <br />
+      <Button color={"red"} text={"you can't push me"} disabled={true} />
+      <br />
+      <Button color={"green"} text={"push me"} />
+    </>
+  );
 }
