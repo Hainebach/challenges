@@ -2,9 +2,13 @@ import "./App.css";
 import { useState } from "react";
 
 export default function App() {
-  let code = "?";
-
   const validCode = "🐡🐠🐋";
+  const [emoji, setEmoji] = useState("");
+
+  function HandleClick(emoji) {
+    console.log(emoji);
+    setEmoji((x) => x + emoji);
+  }
 
   return (
     <div className="container">
@@ -12,7 +16,7 @@ export default function App() {
         <button
           type="button"
           onClick={() => {
-            console.log("Update Code!");
+            HandleClick("🐡");
           }}
         >
           <span role="img" aria-label="Pufferfish">
@@ -22,7 +26,7 @@ export default function App() {
         <button
           type="button"
           onClick={() => {
-            console.log("Update Code!");
+            HandleClick("🐋");
           }}
         >
           <span role="img" aria-label="Whale">
@@ -32,7 +36,7 @@ export default function App() {
         <button
           type="button"
           onClick={() => {
-            console.log("Update Code!");
+            HandleClick("🐠");
           }}
         >
           <span role="img" aria-label="Clownfish">
@@ -44,14 +48,14 @@ export default function App() {
       <button
         type="button"
         onClick={() => {
-          console.log("Reset Code!");
+          setEmoji("");
         }}
       >
         Reset
       </button>
-      <h2>{code}</h2>
+      <h2>{emoji}</h2>
 
-      {code === validCode && <p>Valid code!</p>}
+      {emoji === validCode && <p>Valid code!</p>}
     </div>
   );
 }
