@@ -1,9 +1,10 @@
 import "./App.css";
 
 export default function App() {
-  return <Greeting name="Coach" />;
+  return <Greeting name="Jan" />;
 }
 
 function Greeting({ name }) {
-  return <h1>{name === "Coach" ? "Hello, Coach" : "hello " + name}</h1>;
+  const coach = ["Jan", "Sven", "Klaus"];
+  return <h1>{coach.includes(name) ? "Hello, Coach" : "hello " + name}</h1>;
 }
