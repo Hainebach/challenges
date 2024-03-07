@@ -10,10 +10,16 @@
   background-color: lightgreen;
 }
 
-.card--red {
-  background-color: lightcoral;
+.card--orange {
+  background-color: rgb(218, 136, 59);
 }
 
 .card--yellow {
   background-color: lightyellow;
+}
+.card--purple {
+  background-color: rgb(99, 37, 109);
+}
+.card--brown {
+  background-color: rgb(134, 95, 41);
 }
