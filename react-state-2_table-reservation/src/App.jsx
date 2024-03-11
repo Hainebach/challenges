@@ -7,7 +7,7 @@ export default function App() {
     setPeople(people + 1);
   }
   function handleDecrease() {
-    setPeople(people - 1);
+    if (people > 0) setPeople(people - 1);
   }
   const [people, setPeople] = useState(0);
   return (
