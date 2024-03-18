@@ -1,7 +1,10 @@
 import "./EntryForm.css";
 import Button from "../Button";
 
-export default function EntryForm() {
+export default function EntryForm(onAddEntry) {
+  function handleSubmit() {
+    const formData = new FormData();
+  }
   return (
     <form className="entry-form">
       <h2 className="entry-form__title">New Entry</h2>
