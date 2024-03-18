@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { introduction } from "../resources /lib/data";
+import { introduction } from "../resources/lib/data";
 
-import Volumes from "./volumes";
+import Volumes from "./volumes/Volumes";
 
 export default function HomePage() {
   return (
