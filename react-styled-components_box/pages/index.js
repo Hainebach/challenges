@@ -8,7 +8,7 @@ export default function HomePage() {
       <BoxWithClassName />
       <BoxWithClassName isBlack />
       <BoxWithStyledComponents />
-      <BoxWithStyledComponents $isBlack={true} />
+      <BoxWithStyledComponents $isBlack />
     </HorizontalStyle>
   );
 }
