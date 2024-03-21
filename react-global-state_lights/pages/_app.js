@@ -44,9 +44,11 @@ export default function App({ Component, pageProps }) {
   // }, 0);
 
   const lightsOnCounter = lights.filter((light) => light.isOn === true).length;
+  // const isDimmed =
+  //   lights.filter((light) => light.isOn === false).length === lights.length;
 
   return (
-    <Layout>
+    <Layout isDimmed={!lightsOnCounter}>
       <GlobalStyle />
 
       <Component
