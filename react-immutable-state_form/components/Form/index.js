@@ -25,9 +25,9 @@ export default function Form() {
   }
 
   function handleMountainRangeChange(event) {
-    const newRange = event.target.value;
+    const newRangeValue = event.target.value;
     setMountain((draft) => {
-      draft.values.mountainRange = newRange;
+      draft.values.mountainRange = newRangeValue;
     });
   }
 
