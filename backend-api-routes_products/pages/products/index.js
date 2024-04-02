@@ -18,7 +18,10 @@ export default function Product() {
             <h3>{product.name}</h3>
             <h5>category: {product.category}</h5>
             <h5>description: {product.description}</h5>
-            <h5>price: €{product.price}</h5>
+            <h5>
+              price: {product.currency}
+              {product.price}
+            </h5>
           </li>
         ))}
       </ul>
