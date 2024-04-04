@@ -8,6 +8,7 @@ export default function handler(request, response) {
     phoneNumber: chance.phone(),
     birthday: chance.birthday({ string: true, american: false }),
     address: chance.address({ short_suffix: true }),
+    prefix: chance.prefix(),
   };
   response.status(200).json(character);
 }
