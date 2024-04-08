@@ -14,4 +14,15 @@ export default async function handler(request, response) {
 
     response.status(200).json(product);
   }
+
+  if ((request.method = "PUT")) {
+    const productData = request.body;
+    const productUpdate = await Product.findByIdAndUpdate(id, productData);
+    response.status(200).json(productUpdate);
+  }
+
+  if ((request.method = "DELETE")) {
+    await Product.findByIdAndDelete(id);
+    response.status(200).json({ status: "ok" });
+  }
 }
