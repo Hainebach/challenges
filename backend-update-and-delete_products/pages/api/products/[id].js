@@ -18,7 +18,8 @@ export default async function handler(request, response) {
   if ((request.method = "PUT")) {
     const productData = request.body;
     const productUpdate = await Product.findByIdAndUpdate(id, productData);
-    response.status(200).json(productUpdate);
+    response.status(200).json({ status: productUpdate });
+    console.log("status:", productUpdate);
   }
 
   if ((request.method = "DELETE")) {
